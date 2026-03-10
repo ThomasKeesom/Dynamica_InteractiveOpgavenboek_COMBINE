@@ -7,6 +7,7 @@ project:
     - file: content/Werkcollege ##.md
     - file: content/Results.ipynb
     - file: content/Conclusion.md
+    - file: content/Kratwagentje.tex
     - title: Appendix
       children:
         - file: content/Cheatsheet.md

@@ -1,0 +1,260 @@
+\syncedsection{Kratwagentje}
+
+
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% stappendoosjes (zwart)
+\newcommand{\stepbox}[1]{\;\tikz[baseline=-0.6ex]\node[draw=black,rounded corners=0.6pt,inner sep=2pt,line width=0.7pt]{\scriptsize #1};}
+
+% kleuren (zoals screenshots)
+\definecolor{myOrange}{RGB}{255,190,0}   % kist kader
+\definecolor{myBlue}{RGB}{70,140,255}    % wielen
+\definecolor{myRed}{RGB}{220,0,0}        % rode krachten
+
+
+{\Large \textbf{Opgave 11.2}}
+
+\vspace{2mm}
+
+% ==========================================================
+% a
+% ==========================================================
+\textbf{a}
+
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm, line cap=round, line join=round, >=Latex]
+
+\tikzset{
+  forceR/.style={->, draw=myRed, line width=1.3pt},
+  forceK/.style={->, draw=black, line width=1.3pt},
+  wheel/.style={draw=myBlue, line width=1.3pt},
+  crate/.style={draw=myOrange, line width=1.3pt},
+  solid/.style={draw=black, line width=1.3pt},
+  dashedV/.style={draw=black, line width=1.1pt, dash pattern=on 3pt off 3pt},
+}
+
+% =========================================================
+% FIGUUR (I) links
+% =========================================================
+\coordinate (I0) at (0,0);
+\node[black] at ($(I0)+(5.00,4.15)$) {(I)};
+
+% platform
+\draw[solid] ($(I0)+(2.10,1.35)$) rectangle ($(I0)+(6.90,1.75)$);
+
+% stang links + bovenstuk
+\draw[solid] ($(I0)+(2.10,1.75)$) -- ($(I0)+(2.10,3.15)$);
+\draw[solid] ($(I0)+(2.10,3.15)$) -- ($(I0)+(1.05,3.15)$);
+
+% Ft (rood) links met ruimte
+\draw[forceR] ($(I0)+(1.05,3.15)$) -- ++(-1.60,0);
+\node[myRed] at ($(I0)+(-0.05,3.30)$) {$\vec F_t$};
+
+% wielen
+\coordinate (W1) at ($(I0)+(3.35,1.10)$);
+\coordinate (W2) at ($(I0)+(5.75,1.10)$);
+\def\rw{0.22}
+\draw[wheel] (W1) circle (\rw);
+\draw[wheel] (W2) circle (\rw);
+
+% FN1/FN2: volledig onder het wiel, met extra "lucht" (tuned)
+\def\gap{0.10} % meer lucht onder de cirkelrand
+\def\len{0.70}
+
+\draw[forceR]
+  ($(W1)+(0,-\rw-\gap-\len)$) -- ($(W1)+(0,-\rw-\gap)$);
+\node[myRed, below] at ($(W1)+(0,-\rw-\gap-\len-0.18)$) {$\vec F_{N1}$};
+
+\draw[forceR]
+  ($(W2)+(0,-\rw-\gap-\len)$) -- ($(W2)+(0,-\rw-\gap)$);
+\node[myRed, below] at ($(W2)+(0,-\rw-\gap-\len-0.18)$) {$\vec F_{N2}$};
+
+% kist (oranje)
+\coordinate (KBL) at ($(I0)+(4.25,1.75)$);
+\coordinate (KTR) at ($(I0)+(5.75,3.90)$);
+\draw[crate] (KBL) rectangle (KTR);
+
+% b boven gehele rechthoek (breedte) - horizontaal
+\draw[<->,black,line width=1.0pt] ($(KBL)+(0,0.35)$) -- ($(KTR)+(0,0.35)$);
+\node[black, above] at ($(KBL)!0.5!(KTR)+(0,0.35)$) {$b$};
+
+% d rechts
+\node[black] at ($(KTR)+(0.35,-1.05)$) {$d$};
+
+% G punt + label (alleen punt + G; GEEN extra diagonale pijlen)
+\fill[black] ($(KBL)+(0.65,1.25)$) circle (0.03);
+\node[black] at ($(KBL)+(0.50,1.33)$) {$G$};
+
+% f_g,a omlaag (rood)
+\draw[forceR] ($(KBL)+(0.95,1.45)$) -- ++(0,-1.05);
+\node[myRed] at ($(KBL)+(1.05,0.60)$) {$\vec f_{g_a}$};
+
+% f_g,w omlaag (rood) onder platform
+\draw[forceR] ($(I0)+(4.55,1.55)$) -- ++(0,-1.15);
+\node[myRed] at ($(I0)+(4.70,0.40)$) {$\vec f_{g_w}$};
+
+% =========================================================
+% FIGUUR (II) rechts
+% =========================================================
+\coordinate (II0) at (9.20,0);
+\node[black] at ($(II0)+(4.00,4.15)$) {(II)};
+
+% assen linksboven
+\coordinate (AX) at ($(II0)+(0.55,3.85)$);
+\draw[->,black,line width=1.1pt] (AX) -- ++(0,0.85) node[above] {$\hat{\jmath}$};
+\draw[->,black,line width=1.1pt] (AX) -- ++(0.85,0) node[right] {$\hat{\imath}$};
+\draw[black,line width=1.1pt] (AX) circle (0.15);
+\fill[black] (AX) circle (0.03);
+\node[left] at ($(AX)+(-0.35,0)$) {$\hat{k}$};
+
+% grondlijn
+\draw[solid] ($(II0)+(1.70,1.35)$) -- ($(II0)+(5.50,1.35)$);
+
+% kist
+\coordinate (K2BL) at ($(II0)+(2.75,1.35)$);
+\coordinate (K2TR) at ($(II0)+(4.25,3.45)$);
+\draw[crate] (K2BL) rectangle (K2TR);
+
+% b boven volledige rechthoek
+\draw[<->,black,line width=1.0pt] ($(K2BL)+(0,0.35)$) -- ($(K2TR)+(0,0.35)$);
+\node[black, above] at ($(K2BL)!0.5!(K2TR)+(0,0.35)$) {$b$};
+
+% d rechts
+\node[black] at ($(K2TR)+(0.35,-1.00)$) {$d$};
+
+% G punt + label
+\fill[black] ($(K2BL)+(0.55,1.10)$) circle (0.03);
+\node[black] at ($(K2BL)+(0.40,1.18)$) {$G$};
+
+% f_g omlaag (zwart)
+\draw[forceK] ($(K2BL)+(0.85,1.35)$) -- ++(0,-0.95);
+\node[black] at ($(K2BL)+(0.98,0.55)$) {$\vec f_g$};
+
+% f_{g,x} naar links
+\draw[forceK] ($(K2BL)+(0.85,1.35)$) -- ++(-1.10,0);
+\node[black] at ($(K2BL)+(-0.35,1.50)$) {$\vec f_{g,x}$};
+
+% contactpunt direct onder kist (midden)
+\coordinate (C) at ($(II0)+(3.50,1.35)$);
+
+% FN omhoog onderaan (onder kist)
+\draw[forceK] (C) -- ++(0,1.10);
+\node[black, below] at ($(C)+(0,-0.10)$) {$\vec F_N$};
+
+% Ff naar links
+\draw[forceK] (C) -- ++(-1.85,0);
+\node[black] at ($(C)+(-2.10,0.15)$) {$\vec F_f$};
+
+% stippellijnen: alleen verticaal (geen schuine pijlen)
+\draw[dashedV] ($(K2BL)+(0.55,0.10)$) -- ++(0,0.95);
+\draw[dashedV] ($(K2BL)+(0.85,0.10)$) -- ++(0,0.95);
+\node[black] at ($(K2BL)+(0.73,0.55)$) {$x$};
+
+\end{tikzpicture}
+\end{center}
+
+\vspace{2mm}
+
+% ==========================================================
+% b
+% ==========================================================
+\textbf{b}
+
+Als het kast gaat kantelen dan zit $F_N$ helemaal op het uiteinde van het kast.
+Oftewel $x=\dfrac{b}{2}$. \stepbox{1}
+We bekijken FBD II.
+
+\[
+\sum \vec M_G
+=\frac{b}{2}\,\hat{\imath}\times F_N\,\hat{\jmath}
+-\frac{d}{2}\,\hat{\jmath}\times\bigl(-F_f\,\hat{\imath}\bigr)
+=I\ddot\theta_z
+=I\cdot 0
+=0
+\]
+\[
+\Rightarrow\ \frac{b}{2}F_N\,\hat{k}-\frac{d}{2}F_f\,\hat{k}=0
+\]
+\[
+\Rightarrow\ \frac{b}{2}F_N=\frac{d}{2}F_f
+\stepbox{2}
+\]
+
+\[
+\sum F_x:\ -F_f=m_a a_x
+\stepbox{3}
+\]
+\[
+\sum F_y:\ F_N-F_g=m_a a_y,\ \ m_a a_y=0\ \Rightarrow\ F_N=F_g=m_a g
+\stepbox{4}
+\]
+
+Combineer \stepbox{2}, \stepbox{3} en \stepbox{4}:
+\[
+\frac{b}{2}m_a g=\frac{d}{2}m_a a_{x,k}
+\]
+\[
+a_{x,k}=\frac{b}{d}\,g=\frac{g}{2}
+\stepbox{5}
+\]
+
+\vspace{2mm}
+
+% ==========================================================
+% c
+% ==========================================================
+\textbf{c}
+
+FBD I:
+\[
+\sum F_x:\ (m_a+m_w)a_x=F_t
+\stepbox{6}
+\]
+
+Combineer \stepbox{5} met \stepbox{6} om $F_t$ te vinden:
+\[
+a_x=a_{x,k}\ \Rightarrow\ \text{wagen versnelt niet t.o.v.\ kast want geen slip}
+\]
+\[
+F_t=(m_a+m_w)\,\frac{g}{2}
+\]
+
+\vspace{2mm}
+
+% ==========================================================
+% d
+% ==========================================================
+\textbf{d}
+
+Onderzoek of kracht gaat slippen of kantelen.
+
+Uit \stepbox{2} met $F_f=\mu_s F_N$:
+\[
+xF_N=\frac{d}{2}F_f=\frac{d}{2}\mu_s F_N
+\Rightarrow
+x=\frac{d}{2}\mu_s
+\]
+\[
+x=\frac{d}{2}\mu_s=\frac{d}{2}\cdot\frac{4}{10}=\frac{d}{5}
+\]
+\[
+\frac{b}{2}=\frac{4}{5}x>x
+\Rightarrow
+\text{dus kast gaat eerst slippen}
+\]
+
+\[
+\sum F_x:\ m_a a_{x,s}=-F_f=-\mu_s m_a g
+\]
+\[
+a_{x,s}=-\mu_s g=-\frac{4}{5}g
+\]
+
+
+
+
+
+
+

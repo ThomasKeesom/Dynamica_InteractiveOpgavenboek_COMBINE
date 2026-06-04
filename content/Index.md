@@ -1,5 +1,5 @@
 ---
-title: The TUD starterkit for open publishing with JupyterBook
+title: Dynamica Interactief Werkcollege
 site:
   hide_outline: true
   hide_toc: true
@@ -15,20 +15,20 @@ no-update-date: true
 
 +++ { "kind": "split-image" }
 
-## The TUD starterkit for open publishing with JupyterBook
+## Werkcollege ##: Starre lichamen
 
-a quick setup for your open publishing project
+Dynamica WB1135
 
 {button}`Check our latest book publication <https://tudelft.nl>`  
 
-Author.  
-Supervisor. 
+Author: Thomas Keesom
+Materiaal: Peter Steeneken
 
 ![](figures/cover.png)
 
 +++
 
-This thesis reports on the use of Jupyter Book for open publishing at TU Delft - especially bachelor and master thesis. It provides a quick setup for your open publishing project, including a template and guidelines for using Jupyter Book effectively. The starterkit is designed to help you create and share your research in an open and accessible way.
+Als toepassing van het vak Implementatie van Onderwijs voor de verdiepende lerarenopleiding aan de TU Delft, is deze test werkcollege opgesteld voor het eerstejaars mechanica vak Dynamica WB1135. Deze opzet representeert mijn toekomstige visie voor online tekstboeken van mechanica vakken aan de TU Delft.
 
 +++ {"kind": "justified"}
 ## Quick navigation

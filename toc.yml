@@ -5,6 +5,7 @@ project:
     - file: content/Quickstart.md
     - file: content/Introduction.md
     - file: content/Werkcollege ##.md
+    - file: content/Theorie.md
     - file: content/Results.ipynb
     - file: content/Conclusion.md
     - file: content/Kratwagentje.tex

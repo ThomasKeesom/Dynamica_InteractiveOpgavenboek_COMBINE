@@ -34,24 +34,14 @@ Als toepassing van het vak Implementatie van Onderwijs voor de verdiepende lerar
 ## Quick navigation
 ````{grid} 2
 ```{card}
-:header: 📖 TUD publishing manual
-
-Go to the manual of this starterkit
+:header: 📖 AI Docent
+:url: https://aidocent.d2dsim.com
+Extra hulp of advies nodig? Vraag het aan de AI Docent van Dynamica!
+*Wachtwoord: WB1135_AIdocent*
 ```
 ```{card}
-:header: 📈 Results
-
-jump to the results
-```
-```{card}
-:header: 📯 Conclusion
-
-jump to conclusions
-```
-```{card}
-:header: 📙 Jupyter book
-:url: https://jupyterbook.org/
-
-Learn more about Jupyter book
+:header: 📈 Simulatietool
+:url: https://d2dsim.com/
+Een simulatietool om werkcollege opgaven tot leven te zien komen!
 ```
 ````

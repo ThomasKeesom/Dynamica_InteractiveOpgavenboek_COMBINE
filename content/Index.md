@@ -15,13 +15,13 @@ no-update-date: true
 
 +++ { "kind": "split-image" }
 
-## Werkcollege ##: Starre lichamen
+## Werkcollege 9: Starre lichamen
 
 Dynamica WB1135
 
-{button}`Check our latest book publication <https://tudelft.nl>`  
+{button}`Start! <Introduction.md>`  
 
-Author: Thomas Keesom
+Author: Thomas Keesom \
 Materiaal: Peter Steeneken
 
 ![](figures/cover.png)

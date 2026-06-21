@@ -1,7 +1,3 @@
----
-abstract: |
-    Hoi allemaal, we gaan eens lekker kijken hoe deze meuk werkt. Het wordt vast erg nuttig. Eens zien wat er gaat gebeuren, laterzzzz!
----
 
 # Introduction
 
@@ -11,17 +7,7 @@ Dit werkcollege introduceert de kinematica van starre lichamen.
 ## Voortgang & Info
 In het onderstaande overzicht zie je hoe dit werkcollege over starre lichamen past binnen de reeks andere werkcolleges en welke opdrachten en info belangrijk is.
 
-|Werkcollege|Thema|Boeksecties|
+|Werkcollege|Thema|Boeksecties|Opgaven
 |---|---|---|
-|9|Kinematica van Starre lichamen|9.1-9.5|
+|9|Kinematica van Starre lichamen|9.1-9.5|Turner
 
-
-
-+++{"no-pdf":true}
-```{figure} figures/delft.*
-:label: fig-delft
-:alt: picture of the TUD
-
-A figure that is in the website but not in the PDF version.
-```
-+++

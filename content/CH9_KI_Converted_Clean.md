@@ -19,9 +19,9 @@ In the next section we discuss how the orientation and position of a rigid body 
 ## Orientation and position
 
 
-![](Figures/RigidBodOrientation.pdf)
+![](Figures/RIGIDB~4.PDF)
 
-```{figure} Figures/RigidBodOrientation.pdf
+```{figure} Figures/RIGIDB~4.PDF
 :label: eq:rigbodconstraint
 :width: 70%
 :align: center

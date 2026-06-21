@@ -3,9 +3,8 @@ project:
   toc:
     - file: content/Index.md
     - file: content/Introduction.md
-    - file: content/Theorie.md
+    - file: content/CH9_KI_Converted_Clean.md
     - file: content/OpgavenTurner.md
-    - title: Appendix
       children:
         - file: content/Cheatsheet.md
         - file: errorlog.md

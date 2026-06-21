@@ -16,7 +16,7 @@ $$
 
 In the next section we discuss how the orientation and position of a rigid body can be specified.
 
-## Orientation and position
+### Orientation and position
 
 ![A sketch of a rigib body with important variables](figures/RIGIDB~4.PDF)
 
@@ -44,7 +44,7 @@ $$
 $$
 
 
-## Velocities in a rigid body
+### Velocities in a rigid body
  In general, the motion of a point in a rigid body is a sum of translational and rotational motion. By combining their respective equations, we obtain the most general equation and important equation for the velocity in a rigid body:
  
 $$
@@ -54,7 +54,7 @@ $$
 
 We note that this equation is valid in 3D and for any choice of the points $A$ and $B$ as long as both points move along with the rigid body. However, a smart choice of point $A$ can simplify the analysis.
 
-## Angular acceleration of a rigid body
+### Angular acceleration of a rigid body
 
 After having determined the velocity vector of a point in a rigid body, it is now of interest to also determine the acceleration vector of the points in the rigid body. We take the time derivative of $v_{B}$, and use the product rule on the vector cross product to determine the acceleration vector $\vec{a}_{B}$ in a rigid body.
 

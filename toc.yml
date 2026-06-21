@@ -6,6 +6,3 @@ project:
     - file: content/CH9_KI_Converted_Clean.md
     - file: content/OpgavenTurner.md
     - file: content/UitwerkingnTurner.md
-      children:
-        - file: content/Cheatsheet.md
-        - file: errorlog.md

@@ -8,6 +8,6 @@ Dit werkcollege introduceert de kinematica van starre lichamen.
 In het onderstaande overzicht zie je hoe dit werkcollege over starre lichamen past binnen de reeks andere werkcolleges en welke opdrachten en info belangrijk is.
 
 |Werkcollege|Thema|Boeksecties|Opgaven
-|---|---|---|
+|---|---|---|---|
 |9|Kinematica van Starre lichamen|9.1-9.5|Turner
 

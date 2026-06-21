@@ -18,7 +18,7 @@ In the next section we discuss how the orientation and position of a rigid body 
 
 ## Orientation and position
 
-![](Figures/RIGIDB~4.PDF)
+![](figures/RIGIDB~4.PDF)
 
 ```{figure} Figures/RIGIDB~4.PDF
 :label: eq:rigbodconstraint
@@ -70,7 +70,7 @@ We note that this equation is valid in 3D and for any choice of the points $A$ a
 
 After having determined the velocity vector of a point in a rigid body, it is now of interest to also determine the acceleration vector of the points in the rigid body. We take the time derivative of $v_{B}$, and use the product rule on the vector cross product to determine the acceleration vector $\vec{a}_{B}$ in a rigid body.
 
-![](Figures/RI6CDF~1.PDF)
+![](figures/RI6CDF~1.PDF)
 
 *Figuur: Acceleration components in a rigid body. The acceleration vector a.*
 

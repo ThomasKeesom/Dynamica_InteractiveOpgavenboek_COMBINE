@@ -20,7 +20,7 @@ In the next section we discuss how the orientation and position of a rigid body 
 
 ![](figures/RIGIDB~4.PDF)
 
-```{figure} Figures/RIGIDB~4.PDF
+```{figure} figures/RIGIDB~4.PDF
 :label: eq:rigbodconstraint
 :width: 70%
 :align: center

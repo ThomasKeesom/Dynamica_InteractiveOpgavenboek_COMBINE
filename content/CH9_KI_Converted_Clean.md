@@ -18,19 +18,7 @@ In the next section we discuss how the orientation and position of a rigid body 
 
 ## Orientation and position
 
-![](figures/RIGIDB~4.PDF)
-
-```{figure} figures/RIGIDB~4.PDF
-:label: eq:rigbodconstraint
-:width: 70%
-:align: center
-
-A sketch of a rigib body with important variables
-```
-
-*Figuur: The orientation of a rigid body in the 2D xy-plane can uniquely be described by a position vector r.*
-
-<!-- fig:rigbodor -->
+![A sketch of a rigib body with important variables](figures/RIGIDB~4.PDF)
 
 The first step in the kinematic analysis of a rigid body is to have a unique description of its position and orientation. In planar kinematics, we fully determine the position of a rigid body by fixing the position vectors of 2 points in the rigid body that can be freely chosen, like points $A$ and $B$ of the rectangle in Figure 1.
 
@@ -70,11 +58,7 @@ We note that this equation is valid in 3D and for any choice of the points $A$ a
 
 After having determined the velocity vector of a point in a rigid body, it is now of interest to also determine the acceleration vector of the points in the rigid body. We take the time derivative of $v_{B}$, and use the product rule on the vector cross product to determine the acceleration vector $\vec{a}_{B}$ in a rigid body.
 
-![](figures/RI6CDF~1.PDF)
-
-*Figuur: Acceleration components in a rigid body. The acceleration vector a.*
-
-<!-- fig:rigbodaccgen -->
+![Acceleration components in a rigid body. The acceleration vector a.](figures/RI6CDF~1.PDF)
 
 The unit of angular acceleration is $rad/s^2$. We substitute in $\omega \times r_{B/A}$ for the left over rotational velocity term and obtain the general expression for the acceleration.
 

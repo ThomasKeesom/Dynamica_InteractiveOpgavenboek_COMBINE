@@ -4,5 +4,7 @@ project:
     - file: content/Index.md
     - file: content/Introduction.md
     - file: content/CH9_KI_Converted_Clean.md
-    - file: content/OpgavenTurner.md
-    - file: content/UitwerkingTurner.md
+      children:
+      - file: content/OpgavenTurner.md
+        children:
+        - file: content/UitwerkingTurner.md

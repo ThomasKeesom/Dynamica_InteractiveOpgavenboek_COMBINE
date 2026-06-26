@@ -1,11 +1,11 @@
 version: 1
 project:
-  title: TU Delft's JB Starterkit
+  title: Dynamica Interactive Opgavenboek
   # description:
-  keywords: [Jupyter Book, Open Science, TU Delft, Starterkit]
+  keywords: [Dynamica, Mechinal Engineering, TU Delft]
 
-  github: https://github.com/TUD-JB-OS/starterkit
-  date: 2026-01-31
+  github: https://github.com/ThomasKeesom/Dynamica_InteractiveOpgavenboek_COMBINE/fork
+  date: 2026-06-01
   
     # used to load /reuse materials from other repositories
   references:

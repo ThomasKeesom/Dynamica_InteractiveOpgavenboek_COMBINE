@@ -1,4 +1,4 @@
-## Uitwerking: Turner
+# Uitwerking: Turner
 Hieronder de oplossingen voor de Turner opgaven:
 
 1. Geef de positievector $\vec{r}_A$ als functie van $L_1$ en $\phi_1$. Gebruik het $\hat{i}, \hat{j}, \hat{k}$ co\"ordinatensysteem zoals afgebeeld in het Figuur.
